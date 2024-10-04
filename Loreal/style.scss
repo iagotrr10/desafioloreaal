@@ -3,21 +3,17 @@
     padding: 0;
     box-sizing: border-box;
 }
-
 body{
     background-color: #EFEEF3;
-
 }
-
 header{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    //forma de mudarmos o estilo de uma determinada tela, do tela mínima, até a tela de 800px
-
-    @media (max-width: 800px){
+// forma de mudarmos o estilo em uma determinada tela, da tela minima, até a tela de 800px
+    @media (max-width:800px){
         flex-direction: column;
-        text-align: center;
+       
     }
 }
 
@@ -26,4 +22,36 @@ ul{
     list-style: none;
     width: 70vw;
     justify-content: space-around;
+    @media (max-width:800px){
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+main{
+    .banner{
+        width: 100vw;
+        @media (max-width:800px){
+            display: none;//retirando a imagem
+        }
+    }
+
+    section{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        margin-top: 30px;
+        @media (max-width:80px){
+            flex-direction: column;
+        }
+    }
+
+
+    .caixa1{
+        width: 30vw;
+        @media (max-width:800px){
+            width: 55vw;
+            text-align: center;
+        }
+    }
 }

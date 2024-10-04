@@ -25,4 +25,28 @@ ul {
   list-style: none;
   width: 70vw;
   justify-content: space-around;
+}
+@media (max-width: 800px) {
+  ul {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+main {
+  width: 100vw;
+}
+@media (max-width: 800px) {
+  main {
+    display: none;
+  }
+}
+
+section {
+  display: flex;
+  align-items: center;
+}
+
+.caixa {
+  width: 80vw;
 }/*# sourceMappingURL=style.css.map */
